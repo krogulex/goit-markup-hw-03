@@ -52,7 +52,6 @@ header {
   margin: 0 auto 0 auto;
   padding: 24px 0px 25px 0px;
 }
-/*Do poprawy nie wiem dlaczego wychodzi tak dziwnie*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -253,7 +252,17 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
 }
-
+.portfolio-page .container {
+  justify-content: center;
+}
+.portfolio-button-list {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 50px;
+}
+.portfolio-button-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-button {
   background: #f5f4fa;
   border-radius: 4px;
@@ -264,9 +273,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-}
-.portfolio-button-list {
-  list-style-type: none;
+  padding: 6px 22px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -278,9 +285,16 @@ header {
 .box {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+  margin: 0px;
 }
 .box-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-list-item {
 }
 .box-name {
   font-weight: 700;
