@@ -37,15 +37,17 @@ header {
   font-family: "Roboto";
   font-weight: 500;
   letter-spacing: 0.02em;
+  width: 1600px;
 }
-.container {
+.header .container {
   width: 1200px;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
+/*Do poprawy nie wiem dlaczego wychodzi tak dziwnie*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -92,9 +94,15 @@ header {
 .contact-link:focus {
   color: #2196f3;
 }
+.title .container {
+  display: flex;
+  flex-direction: column;
+}
 .title {
   background-color: #2f303a;
   color: #ffffff;
+  width: 1600px;
+  height: 600px;
 }
 .title-text {
   font-family: "Roboto";
@@ -104,6 +112,8 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  flex-wrap: wrap;
+  margin: 200px 452px 30px 452px;
 }
 .title-button {
   background-color: #2196f3;
@@ -115,24 +125,40 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 41px 10px 42px;
+  margin: 30px auto 200px auto;
+}
+.section {
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list {
   list-style-type: none;
+  display: flex;
 }
 .list-heading {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.list-item:first-child {
+  margin-left: 215px;
+}
+.list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .list-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
+  height: 75px;
 }
 .second-title {
   font-weight: 700;
@@ -140,10 +166,17 @@ header {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 94px auto 50px auto;
 }
 .second-title-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
+.second-title-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .our-team {
   background-color: #f5f4fa;
   font-size: 16px;
@@ -169,6 +202,7 @@ header {
 .bottom {
   background-color: #2f303a;
   line-height: 1.71;
+  width: 1600px;
 }
 .logo-footer {
   color: #ffffff;
