@@ -258,6 +258,7 @@ header {
 .portfolio-button-list {
   list-style-type: none;
   display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .portfolio-button-list-item:not(:last-child) {
@@ -295,7 +296,9 @@ header {
   flex-wrap: wrap;
 }
 .box-list-item {
+  padding-right: 30px;
 }
+/*Spróbować zrobić co 3 element padding*/
 .box-name {
   font-weight: 700;
   font-size: 18px;
