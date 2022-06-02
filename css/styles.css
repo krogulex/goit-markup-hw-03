@@ -214,8 +214,8 @@ header {
 }
 .name {
   font-weight: 500;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .workplace {
   color: #757575;
@@ -259,7 +259,7 @@ header {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .portfolio-button-list-item:not(:last-child) {
   margin-right: 8px;
@@ -295,19 +295,34 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.box-list-item {
-  padding-right: 30px;
-}
 /*Spróbować zrobić co 3 element padding*/
+.box-list-item:nth-child(3n + 1),
+.box-list-item:nth-child(3n + 2) {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.box-list-item:nth-child(3n + 3) {
+  margin-top: 30px;
+}
+
 .box-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  width: 322px;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .box-filter {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 322px;
+  height: 30px;
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
