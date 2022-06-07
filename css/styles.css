@@ -3,6 +3,7 @@ body {
   color: #212121;
   font-size: 14px;
   line-height: 16px;
+  margin: 0 15px;
 }
 *,
 *::before,
@@ -34,7 +35,6 @@ link {
 }
 .container {
   width: 1200px;
-  padding: 0 15px;
   align-items: center;
   margin: 0 auto;
 }
@@ -140,12 +140,9 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.list-section .container {
-}
 .list {
   list-style-type: none;
   display: flex;
-  padding-bottom: 94px;
 }
 .list-heading {
   font-weight: 700;
@@ -172,6 +169,10 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+}
+.section-second-title {
+  padding-top: 0px;
+  padding-bottom: 94px;
 }
 .second-title-list {
   list-style-type: none;
@@ -252,6 +253,9 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
 }
+.portfolio-page {
+  padding-bottom: 0px;
+}
 .portfolio-page .container {
   justify-content: center;
 }
@@ -259,7 +263,6 @@ header {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .portfolio-button-list-item:not(:last-child) {
   margin-right: 8px;
@@ -282,6 +285,9 @@ header {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.box-list-section {
+  padding-top: 50px;
 }
 .box {
   background: #ffffff;
