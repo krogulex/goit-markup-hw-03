@@ -3,7 +3,6 @@ body {
   color: #212121;
   font-size: 14px;
   line-height: 16px;
-  margin: 0 15px;
 }
 *,
 *::before,
@@ -177,7 +176,7 @@ header {
 .second-title-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .second-title-item:not(:last-child) {
   margin-right: 30px;
@@ -300,17 +299,12 @@ header {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 /*Spróbować zrobić co 3 element padding*/
-.box-list-item:nth-child(3n + 1),
-.box-list-item:nth-child(3n + 2) {
-  margin-right: 30px;
+.box-list-item {
   margin-top: 30px;
 }
-.box-list-item:nth-child(3n + 3) {
-  margin-top: 30px;
-}
-
 .box-name {
   font-weight: 700;
   font-size: 18px;
